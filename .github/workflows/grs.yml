@@ -86,6 +86,14 @@ jobs:
           options: username=${{ github.repository_owner }}&repo=Coin-Clicker&theme=algolia
           path: profile/pin-coin-clicker.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card 8
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Password-Generator&theme=algolia
+          path: profile/pin-password-generator.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Commit cards
         run: |
