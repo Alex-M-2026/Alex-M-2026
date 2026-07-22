@@ -19,7 +19,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&theme=algolia&show_icons=true
+          options: username=${{ github.repository_owner }}&theme=algolia&show_icons=true&hide=c%23,dart'
           path: profile/stats.svg
           token: ${{ secrets.STATS_TOKEN }}
 
